@@ -15,7 +15,8 @@ class XmlBankApi : IBankApi
                    """;
 
         // Call bank api with XML
-        Console.WriteLine($"{GetType().Name} worked");
+        Console.WriteLine($"{GetType().Name} worked with;");
+        Console.WriteLine(xml);
         return true;
     }
 }

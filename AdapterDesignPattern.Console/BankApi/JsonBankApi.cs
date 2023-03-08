@@ -6,7 +6,7 @@ class JsonBankApi : IBankApi
 {
     public bool ExecuteTransaction(TransferTransaction transaction)
     {
-        var xml = $$""""
+        var json = $$""""
                    {
                         ""FromIBAN"": ""{{transaction.ToIBAN}}"",
                         ""ToIBAN"": ""{{transaction.ToIBAN}}"",
@@ -15,7 +15,8 @@ class JsonBankApi : IBankApi
                    """";
 
         // Call bank api with Json
-        Console.WriteLine($"{GetType().Name} worked");
+        Console.WriteLine($"{GetType().Name} worked with;");
+        Console.WriteLine(json);
         return true;
     }
 }
